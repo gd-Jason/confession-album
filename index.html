@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#263d43">
+  <title>留给你的心动纪念册</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="glow glow-one"></span>
+    <span class="glow glow-two"></span>
+    <span class="grain"></span>
+  </div>
+
+  <main class="experience">
+    <section id="cover" class="cover-screen" aria-labelledby="coverTitle">
+      <p class="overline">A LITTLE ALBUM FOR YOU</p>
+      <button id="openAlbum" class="album-cover" type="button" aria-describedby="openHint">
+        <span class="cover-ring ring-one"></span>
+        <span class="cover-ring ring-two"></span>
+        <span class="cover-ribbon">for someone special</span>
+        <span class="cover-title">心动<br><em>纪念册</em></span>
+        <span class="cover-caption">这里没有照片，<br>却存着每一次想起你的瞬间。</span>
+        <span class="cover-flower flower-a">✦</span>
+        <span class="cover-flower flower-b">✿</span>
+      </button>
+      <h1 id="coverTitle">有些喜欢，想用一帧一帧的方式慢慢告诉你。</h1>
+      <p id="openHint" class="open-hint">轻触纪念册封面，翻开这份小小心意</p>
+    </section>
+
+    <section id="album" class="album is-hidden" aria-label="心动纪念册">
+      <header class="album-top">
+        <button id="closeAlbum" class="close-button" type="button" aria-label="合上纪念册">×</button>
+        <p><span id="sectionLabel">写在开头</span><i></i><span id="pageCount">01 / 07</span></p>
+        <button id="motionToggle" class="motion-button" type="button" aria-pressed="false">自动翻页：关</button>
+      </header>
+
+      <div class="album-stage">
+        <div id="frameStack" class="frame-stack" tabindex="0" aria-label="告白纪念册。点击相框左右区域，或使用方向键翻阅。">
+          <span class="stack-sheet sheet-one" aria-hidden="true"></span>
+          <span class="stack-sheet sheet-two" aria-hidden="true"></span>
+
+          <article class="memory-frame is-active" data-title="写在开头" data-index="0">
+            <div class="frame-edge">
+              <span class="paper-fold fold-bottom-right" aria-hidden="true"></span>
+              <div class="frame-mat theme-dawn">
+                <span class="corner c-tl">✦</span><span class="corner c-tr">✦</span>
+                <p class="frame-number">01</p>
+                <p class="frame-kicker">THE FIRST THING I WANTED TO SAY</p>
+                <h2>你好，<br><em>这是我认真写给你的开场白。</em></h2>
+                <p class="frame-copy">我想了很久，该从哪一句开始。后来发现，所有绕来绕去的心事，最后都会安静地落在同一个名字上——你。</p>
+                <div class="frame-note"><span>♡</span> 所以这一次，我想把喜欢说得清楚一点。</div>
+                <p class="frame-sign">— 从一份小小的在意开始</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="memory-frame" data-title="我眼中的你" data-index="1">
+            <div class="frame-edge">
+              <span class="push-pin pin-coral pin-left" aria-hidden="true"></span>
+              <span class="push-pin pin-cream pin-right" aria-hidden="true"></span>
+              <div class="frame-mat theme-peach">
+                <span class="corner c-tl">✿</span><span class="corner c-br">✿</span>
+                <p class="frame-number">02</p>
+                <p class="frame-kicker">THE WAY I NOTICE YOU</p>
+                <h2>原来心动，<br><em>会藏在很多不经意的细节里。</em></h2>
+                <p class="frame-copy">是你认真听人说话时的安静，是笑起来时眼睛弯弯的弧度，也是你照顾别人情绪时，那一点不张扬的温柔。</p>
+                <div class="quote-card">“你不必时时发光，<br>在我这里，你本来就很特别。”</div>
+                <p class="frame-sign">— 这些瞬间，我都有好好收着</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="memory-frame" data-title="想和你分享的日常" data-index="2">
+            <div class="frame-edge">
+              <span class="paper-fold fold-top-right" aria-hidden="true"></span>
+              <div class="frame-mat theme-sage">
+                <span class="corner c-tr">☼</span><span class="corner c-bl">✦</span>
+                <p class="frame-number">03</p>
+                <p class="frame-kicker">ORDINARY DAYS, WITH YOUR NAME IN THEM</p>
+                <h2>因为你，<br><em>寻常的日子也有了想分享的理由。</em></h2>
+                <ul class="little-list">
+                  <li><b>晚霞</b><span>看到好看的天空，会想：你是不是也在抬头。</span></li>
+                  <li><b>新歌</b><span>听见喜欢的旋律，会想留给你听一遍。</span></li>
+                  <li><b>小事</b><span>开心或难过时，第一个浮现的分享对象，慢慢成了你。</span></li>
+                </ul>
+                <p class="frame-sign">— 不是轰轰烈烈，是反复出现的想念</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="memory-frame" data-title="想让你知道的事" data-index="3">
+            <div class="frame-edge">
+              <span class="push-pin pin-lilac pin-center" aria-hidden="true"></span>
+              <div class="frame-mat theme-lilac">
+                <span class="corner c-tl">❋</span><span class="corner c-br">❋</span>
+                <p class="frame-number">04</p>
+                <p class="frame-kicker">WHAT I HOPE YOU WILL KNOW</p>
+                <h2>我可能不总擅长表达，<br><em>但我会一直很认真。</em></h2>
+                <p class="frame-copy">我会记得你随口提起的小事，会在你低落时认真听你说话，也会努力把答应你的事，稳稳地做到。</p>
+                <div class="promise-card">
+                  <span>给你的温柔说明</span>
+                  <p>不催促，不冒进；尊重你的节奏，也珍惜每一次靠近。</p>
+                </div>
+                <p class="frame-sign">— 这不是一时兴起，是很长的认真</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="memory-frame" data-title="关于我们的想象" data-index="4">
+            <div class="frame-edge">
+              <span class="paper-fold fold-bottom-left" aria-hidden="true"></span>
+              <div class="frame-mat theme-rose">
+                <span class="corner c-tr">♡</span><span class="corner c-bl">♡</span>
+                <p class="frame-number">05</p>
+                <p class="frame-kicker">A SMALL FUTURE I IMAGINE</p>
+                <h2>如果有机会，<br><em>想和你把日子过成彼此的故事。</em></h2>
+                <div class="future-notes">
+                  <p><b>晴天</b><span>一起散步，把路边的小事说成只有我们懂的笑话。</span></p>
+                  <p><b>雨天</b><span>一起躲雨，也一起把不开心慢慢晾干。</span></p>
+                  <p><b>平常日</b><span>不用每天都有惊喜，想起彼此就觉得安心。</span></p>
+                </div>
+                <p class="frame-sign">— 不必盛大，真诚就已经足够美好</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="memory-frame" data-title="给你的温柔说明" data-index="5">
+            <div class="frame-edge">
+              <span class="push-pin pin-sage pin-right" aria-hidden="true"></span>
+              <div class="frame-mat theme-sky">
+                <span class="corner c-tl">☁</span><span class="corner c-br">✦</span>
+                <p class="frame-number">06</p>
+                <p class="frame-kicker">A GENTLE LITTLE PROMISE</p>
+                <h2>喜欢不是要求，<br><em>而是我愿意给你的耐心。</em></h2>
+                <p class="frame-copy">我不会用一场告白催促你给出答案。比起立刻拥有某种结果，我更希望你能自在地了解我，也自在地做你自己。</p>
+                <div class="soft-note">
+                  <span>给你的备注</span>
+                  <p>你的感受、你的节奏、你的选择，都值得被认真对待。</p>
+                </div>
+                <p class="frame-sign">— 这一页，不急着翻过去</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="memory-frame final-frame" data-title="想问你的话" data-index="6">
+            <div class="frame-edge">
+              <span class="push-pin pin-gold pin-left" aria-hidden="true"></span>
+              <span class="paper-fold fold-top-left" aria-hidden="true"></span>
+              <div class="frame-mat theme-night">
+                <span id="confetti" class="confetti" aria-hidden="true"></span>
+                <span class="corner c-tl">✦</span><span class="corner c-tr">✦</span><span class="corner c-bl">✦</span><span class="corner c-br">✦</span>
+                <p class="frame-number">07</p>
+                <p class="frame-kicker">THE QUESTION I WANT TO ASK</p>
+                <h2>所以，<br><em>你愿意让我继续参与<br>你的以后吗？</em></h2>
+                <p class="frame-copy">不用急着回答。只希望合上这本纪念册时，你会记得：有人正在很温柔、很认真地喜欢着你。</p>
+                <button id="accept" class="accept-button" type="button">愿意，和你一起续写 ♡</button>
+                <p id="answerText" class="answer-text" aria-live="polite"></p>
+                <p class="frame-sign">— 一直在这里的我</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <nav class="controls" aria-label="纪念册翻页控制">
+        <button id="previous" class="turn-button" type="button" aria-label="上一帧"><span>←</span> 上一帧</button>
+        <div id="progress" class="progress" aria-label="阅读进度"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <button id="next" class="turn-button" type="button" aria-label="下一帧">下一帧 <span>→</span></button>
+      </nav>
+      <p class="gesture-hint">点击相框左右侧翻阅，也可使用键盘方向键</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
